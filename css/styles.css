@@ -1,10 +1,12 @@
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #444;
   font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
 *, *::before, *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
   color: inherit;
   font: inherit; }
@@ -64,8 +66,12 @@ main {
     .signin-container #signInForm input:last-child {
       color: #000;
       background-color: rgba(255, 255, 255, 0.7);
+      -webkit-box-shadow: 0 0 0;
       box-shadow: 0 0 0;
+      -webkit-transition: all .1s ease;
+      -o-transition: all .1s ease;
       transition: all .1s ease; }
       .signin-container #signInForm input:last-child:hover {
         background-color: #fff;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 1px 6px;
         box-shadow: rgba(0, 0, 0, 0.7) 0 1px 6px; }
